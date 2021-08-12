@@ -1,0 +1,167 @@
+<html>
+	<head>
+		<title>developer aamir</title>
+		<script type="text/javascript" src="C:\Users\AAMIR\Desktop\web development\4.jquery\jquery.min.js"></script>
+	<style>
+		body{
+			background-color:grey;
+			background:url(Afternoon-Sunset-Landscape-Background.jpg) no-repeat center center fixed;
+			background-size:cover;
+			font-size:30px;
+		}
+		#whole{
+			margin:0 auto;
+			width:500px;
+			margin-top: 150px;
+			padding:20 20 20 20;
+			
+		}
+					
+		
+		.input{
+			font-size:24px;
+			width:90%;
+			height:50px;
+			border:1px;
+			border-style: dotted;
+			border-color: blue;
+			border-radius:6px;
+			padding:5 5 5 10;
+			margin-bottom:10px;
+				}
+			
+		
+		#form-login{
+			display: none;
+			
+				}
+		#submit{
+			
+			padding:0;
+			width:25%;
+			height:45px;
+			background-color:green;
+			color:white;
+			font-size:22px;
+			border-color: green;
+			border-radius:10px;
+			position:relative;
+			left:148px;
+							}
+	
+		
+		#qualification{
+		width:250px;
+		height:40px;
+		border-radius:8px;
+		font-size:22px ;
+		font-family:bold;
+		
+		}
+		#qualification:hover{
+			width:300px;
+			font-size:20px;
+			color:white;
+			background-color:red;
+		}
+		#submit:hover{
+			background:radial-gradient(green,gray);
+			}
+		#login{
+			padding:0;
+			width:22%;
+			height:45px;
+			background-color:green;
+			color:white;
+			font-size:22px;
+			border-color: green;
+			border-radius:10px;
+			position:relative;
+			left:150px;
+
+				}
+		#login:hover{
+			
+			background:radial-gradient(green,gray);
+					}
+		#buttons{
+			margin-top: 20px;
+
+		}
+		#check{
+			color:white;
+			font-size: 20px;
+			position: relative;
+			left: 125px;
+			top:10px;
+		}
+		.toggleforms{
+			color:white;
+			font-size: 20px;
+			text-decoration:none;
+			position: relative;
+			top: 10px;
+			left:175px;
+		}
+		
+	</style>
+	</head>
+<body>
+<div id="whole">
+	<form id="form-login">
+<div class="lab">	
+	<input type="email" id="email" class="input" autocomplete="off" required placeholder="Your Email" pattern=".{ /^([a-zA-Z)-9])+@(([a-zA-Z0-9])*\.)+([a-zA-Z0-9]{2,4})+$/}" title="Please enter valid email">
+	<br>
+	
+	<input type="password" id="password" class="input" autocomplete="off" placeholder="Password" required pattern=".{6,15}" title="Password should be greater than 7(seven) characters" >
+	<br>
+	<input type="checkbox" name="checkbox" value="1"  checked="checked" id="check" ><span class="lab"  id="check">Stay Logged In</span>
+<div id="buttons">
+
+			<input type="submit" value="Login !" name="login" id="login"  ><br>
+			<a id="sign" class="toggleforms">Sign Up</a>
+		</div>
+	</div>
+	</form>	
+		
+		<form id="form-signup">
+<div class="lab">	
+	
+	<input type="text" id="name"  autocomplete="off" class="input" required placeholder="Your Name" autofocus="autofocus" pattern=".{8,25}" title="Please Enter your Full name"><br>
+	<input type="email" id="email" class="input" autocomplete="off" required placeholder="Email e.g. example@.com" pattern=".{ /^([a-zA-Z)-9])+@(([a-zA-Z0-9])*\.)+([a-zA-Z0-9]{2,4})+$/}" title="Please enter valid email">
+	<br>
+	<input type="text" id="phone" class="input" autocomplete="off" required placeholder=" Phone " pattern=".{10}" title="phone number must be of 10 digits and not greater than 13 digits">
+	<br>
+	
+	
+	<input type="password" id="password" class="input" autocomplete="off"placeholder="Your Password" required pattern=".{6,15}" title="Password should be greater than 7(seven) characters" >
+	<br>
+	<input type="password" id="password" class="input" placeholder="Confirm Password" autocomplete="off" required >
+	<br>
+		
+		<select id="qualification">
+		<option value="12th">12th</option>
+		<option value="B.sc">B.sc</option>
+		<option value="B.A">B.A</option>
+		<option value="B.com">B.com</option>
+		<option value="B.B.A">B.B.A</option>
+		<option value selected="B.C.A">B.C.A</option>
+	</select>
+		<br>
+<div id="buttons">
+			<input type="submit"  id="submit" formmethod="get" value="Sign Up!">
+		</div>
+		<a id="showlogin" class="toggleforms">Login</a>
+	</div>
+	</form>	
+	</div>
+<script type="text/javascript">
+$(".toggleforms").click(function(){
+			$("#form-login").toggle();
+			$("#form-signup").toggle();
+			}
+			);	
+
+	</script>
+	</body>
+</html>
