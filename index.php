@@ -97,5 +97,6 @@ if ($error !="")
   <button type="submit" name="submit" id="submit" class="btn btn-primary">Login</button>
     <button  class="btn btn-success"><a href="signup.php" id="sign">SignUp</a></button>
 </form>
+<footer>&copy :Aamir</footer>
 </body>
 </html>
